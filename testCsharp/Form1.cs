@@ -15,9 +15,9 @@ namespace testCsharp
 {
     public partial class Form1 : Form
     {
-        [DllImport(@"F:\github\libfacedetection\sln\Debug\SfxFaceDetect.dll", CallingConvention = CallingConvention.Cdecl,SetLastError = true)]
+        [DllImport(@"F:\github\libfacedetection\sln\Release\SfxFaceDetect.dll", CallingConvention = CallingConvention.Cdecl,SetLastError = true)]
         public static extern int add(int a, int b);
-        [DllImport(@"F:\github\libfacedetection\sln\Debug\SfxFaceDetect.dll", CallingConvention = CallingConvention.Cdecl, SetLastError = true)]
+        [DllImport(@"F:\github\libfacedetection\sln\Release\SfxFaceDetect.dll", CallingConvention = CallingConvention.Cdecl, SetLastError = true)]
         unsafe public static extern int* sfxFaceDetect(IntPtr result_buffer, IntPtr rgb_image_data, int width, int height, int step);
 
 
